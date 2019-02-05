@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "lts/*"
+
+before_script:
+  - npm install  -g eslint
+  
+script:
+  - npm run eslint
+  
+cache:
+  apt: true
+  directories:
+    - node_module  
